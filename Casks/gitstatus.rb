@@ -6,25 +6,25 @@ cask "gitstatus" do
     end
   end
 
-  version "2.0.0"
+  version "2.1.0"
 
   on_macos do
     on_arm do
-      sha256 "1ba82f3b9728feace81cbdc6161538bbf002211c85ada2514ab09c72346d401a"
+      sha256 "711bac359a8c59be23b0b80106acbefa36fe47dc4207e412550951d79335c413"
       url "https://github.com/Jleagle/gitstatus/releases/download/v#{version}/gitstatus_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "171ac67767f34a6c8f5fe0208cbcfdc2249b9f944e37110e0d6bf94b0812d04e"
+      sha256 "b4b335d17dd32c2b7a07515c6a330531082373c5df3d2003c00e7e2e59a178a6"
       url "https://github.com/Jleagle/gitstatus/releases/download/v#{version}/gitstatus_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "22b16ee195a583a52b2508c116cd77f9b8e5c5a7177d6d2636b46154ae059ce7"
+      sha256 "e015ea8ab33720bacb5e28195f834eba3b402ef70e79c223b65afc8f0c24e35d"
       url "https://github.com/Jleagle/gitstatus/releases/download/v#{version}/gitstatus_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7677af0200aa24999e484f14508648642e168b08a2702fe132601d9d8038fda1"
+      sha256 "6bfb187d4ef34f9ab7dcc1c7a385f3e253153b3f290237426ecdfd42c744e1b1"
       url "https://github.com/Jleagle/gitstatus/releases/download/v#{version}/gitstatus_#{version}_linux_amd64.tar.gz"
     end
   end
