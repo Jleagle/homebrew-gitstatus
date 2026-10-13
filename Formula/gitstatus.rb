@@ -2,8 +2,8 @@
 class Gitstatus < Formula
   desc "Status of every git repo under a directory, with optional pulls"
   homepage "https://github.com/Jleagle/gitstatus"
-  url "https://github.com/Jleagle/gitstatus/archive/refs/tags/v2.4.0.tar.gz"
-  sha256 "0d9434d7c42ffb73b31f31bcdc6ff88eb327bcebcd85ebb24a4327cc1d7fcf22"
+  url "https://github.com/Jleagle/gitstatus/archive/refs/tags/v2.5.0.tar.gz"
+  sha256 "0741ffa8f800ce65d21d575f62c69b1ce2bdc21ff8640a97a10960b4a34035ac"
   license "MIT"
 
   livecheck do
@@ -16,8 +16,8 @@ class Gitstatus < Formula
     # The same -X values the goreleaser builds had; std_go_args adds -s -w.
     ldflags = %W[
       -X main.version=#{version}
-      -X main.commit=c3328a8453dfddd42f7f75201d589b2fbb6d20f6
-      -X main.date=2026-10-08T18:27:19Z
+      -X main.commit=af0086da741da2bd26c3128d746d882867d6b032
+      -X main.date=2026-10-13T20:02:44Z
     ]
     system "go", "build", *std_go_args(ldflags:)
   end
